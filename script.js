@@ -27,34 +27,34 @@ $(document).ready(function(){
         loop: true
     });
     // Handle form submission
-    $("#submitBtn").on("click", function () {
-        var email = $("#email").val();
-        var subject = $("#sub").val();
-        var message = $("#msg").val();
+    // $("#submitBtn").on("click", function () {
+    //     var email = $("#email").val();
+    //     var subject = $("#sub").val();
+    //     var message = $("#msg").val();
 
-        // Validate form fields (add more validation if needed)
-        if (email.trim() === '' || subject.trim() === '' || message.trim() === '') {
-            alert("Please fill in all fields.");
-            return;
-        }
+    //     // Validate form fields (add more validation if needed)
+    //     if (email.trim() === '' || subject.trim() === '' || message.trim() === '') {
+    //         alert("Please fill in all fields.");
+    //         return;
+    //     }
 
-        // Send data to server-side script (e.g., sendmail.php)
-        $.ajax({
-            type: "POST",
-            url: $("#contactForm").attr("action"),
-            data: {
-                email: email,
-                subject: subject,
-                message: message
-            },
-            success: function (response) {
-                // Handle success (optional)
-                alert("Email sent successfully!");
-            },
-            error: function (error) {
-                // Handle error (optional)
-                alert("Error sending email. Please try again later.");
-            }
-        });
-    });
+    //     // Send data to server-side script (e.g., sendmail.php)
+    //     $.ajax({
+    //         type: "POST",
+    //         url: $("#contactForm").attr("action"),
+    //         data: {
+    //             email: email,
+    //             subject: subject,
+    //             message: message
+    //         },
+    //         success: function (response) {
+    //             // Handle success (optional)
+    //             alert("Email sent successfully!");
+    //         },
+    //         error: function (error) {
+    //             // Handle error (optional)
+    //             alert("Error sending email. Please try again later.");
+    //         }
+    //     });
+    // });
 });
