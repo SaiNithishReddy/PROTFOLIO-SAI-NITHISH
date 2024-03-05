@@ -14,47 +14,16 @@ $(document).ready(function(){
     });
 
     var typed1 = new Typed(".typing", {
-        strings: ["Fresher Graduate", "Software Developer"],
+        strings: ["Software Developer","Java Full Stck Developer", "Front-End Developer", "Back-End Developer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed2 = new Typed(".typing-1", {
-        strings: ["JAVA DEVELOPER", "WEB Developer"],
+        strings: ["JAVA DEVELOPMENT", "WEB DEVELOPMENT"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
-    // Handle form submission
-    // $("#submitBtn").on("click", function () {
-    //     var email = $("#email").val();
-    //     var subject = $("#sub").val();
-    //     var message = $("#msg").val();
-
-    //     // Validate form fields (add more validation if needed)
-    //     if (email.trim() === '' || subject.trim() === '' || message.trim() === '') {
-    //         alert("Please fill in all fields.");
-    //         return;
-    //     }
-
-    //     // Send data to server-side script (e.g., sendmail.php)
-    //     $.ajax({
-    //         type: "POST",
-    //         url: $("#contactForm").attr("action"),
-    //         data: {
-    //             email: email,
-    //             subject: subject,
-    //             message: message
-    //         },
-    //         success: function (response) {
-    //             // Handle success (optional)
-    //             alert("Email sent successfully!");
-    //         },
-    //         error: function (error) {
-    //             // Handle error (optional)
-    //             alert("Error sending email. Please try again later.");
-    //         }
-    //     });
-    // });
 });
